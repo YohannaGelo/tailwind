@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ruta del css resultante -->
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <title>Ejemplo Galería con Tailwind</title>
+</head>
+
+<body>
+
+    <header class="bg-sky-600 text-white h-20 px-10 flex justify-between items-center">
+        <h1 class="text-3xl font-bold uppercase">Logo</h1>
+        <nav class="flex gap-10">
+            <a href="#" class="text-lg">Inicio</a>
+            <a href="#" class="text-lg">Blog</a>
+            <a href="#" class="text-lg">Contacto</a>
+        </nav>
+    </header>
+
+    <h2 class="text-center font-bold text-4xl my-8"> Galería Flexbox con Tailwind CSS</h2>
+
+    <!-- Para usar un color en hexadecimal, una proporción que no existe en tailwind... se usa corchetes -->
+    <section class="w-[90%] mx-auto flex flex-wrap gap-5">
+        <img src="dist/assets/img/pexels-alex-andrews-271121-2295744.jpg" alt="Imagen" class="w-52 h-52 grow basis-[30%]  object-cover">
+        <img src="dist/assets/img/pexels-dsd-143941-1829979.jpg" alt="Imagen" class="w-52 h-52 grow basis-[30%]  object-cover">
+        <img src="dist/assets/img/pexels-pixabay-302304.jpg" alt="Imagen" class="w-52 h-52 grow basis-[30%]  object-cover">
+        <img src="dist/assets/img/pexels-pixabay-45201.jpg" alt="Imagen" class="w-52 h-52 grow basis-[30%]  object-cover">
+        <img src="dist/assets/img/pexels-pixabay-47547.jpg" alt="Imagen" class="w-52 h-52 grow basis-[30%] object-cover">
+        <img src="dist/assets/img/pexels-pixabay-50577.jpg" alt="Imagen" class="w-52 h-52 grow basis-[30%]  object-cover">
+    
+    </section>
+
+</body>
+
+</html>

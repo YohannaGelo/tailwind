@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian&display=swap" rel="stylesheet">
+    <!-- ruta del css resultante -->
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <title>Ejemplo Transiciones con Tailwind</title>
+</head>
+
+<body class="bg-amber-100 h-screen flex justify-center items-center">
+
+    <figure class="w-64 relative group  overflow-hidden rounded shadow">
+        <!-- top-0 left-0 w-full h-full = top-0 left-0 right-0 left-0 = inset-0 -->
+        <p class="bg-zinc-800/40 text-white text-bold text-6xl absolute inset-0 flex items-center justify-center z-1">Nature</p>
+        <img src="dist/assets/img/pexels-todd-trapani-488382-1420440.jpg" alt="Imagen naturaleza" class="object-cover group-hover:translate-y-full transition duration-300">
+    </figure>
+
+
+</body>
+
+</html>

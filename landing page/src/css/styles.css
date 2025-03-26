@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/* @ayer theme, base, components, utilities */
+
+/* Para personalizar el tema con nuestras variables */
+@theme {
+    --color-azulon: #9BB8CD;
+    --color-fondo: #FFF7D4;
+    --color-mostaza: #EEC759;
+    --color-verdoso: #B1C381;
+
+    --font-goshi: 'Gochi Hand', cursive;
+    --font-bubbler: 'Bubbler One', sans-serif;
+}
+
+/* Para estilos que afectan a todas las etiquetas */
+@layer base {
+    /* Ahora los h1 siempre tendrán este tamaño */
+    h1 {
+        font-size: var(--text-5xl)
+    }
+
+    h2 {
+        font-size: var(--text-4xl)
+    }
+
+}
+
+/* Para crear nuestros propios componentes */
+@layer components {
+    .wrapper {
+        /* Para usar clases propias de tailwind lo hacemos así */
+        @apply w-[90%] mx-auto max-w-screen-xl;
+
+        /* Podríamos usar clases normales de css */
+    }
+
+    /* Más componentes aquí */
+}
+
+/* Para crear nuestras propias utilidades */
+@layer utilities {
+    .flex-center {
+        @apply flex justify-items-center items-center;
+    }
+}
+
+/* 
+A partir de la version 4 sería así:
+
+@utility flex-center {
+    @apply flex justify-items-center items-center;
+} */
+

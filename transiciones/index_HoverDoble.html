@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian&display=swap" rel="stylesheet">
+    <!-- ruta del css resultante -->
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <title>Ejemplo Transiciones con Tailwind</title>
+</head>
+
+<body class="bg-amber-100 h-screen flex justify-center items-center">
+    
+    <!-- SEGUNDA VERSIÓN CON 2 HOVER -->
+    <!-- Debemos establecer un nombre a cada group -->
+    <section class="bg-amber-300 p-20 group/section">
+        <figure class="w-64 relative group/figure overflow-hidden rounded shadow">
+            <p
+                class="bg-zinc-800/40 text-white group-hover/section:text-blue-300 text-bold text-6xl absolute inset-0 flex items-center justify-center z-1">
+                Nature</p>
+            <img src="dist/assets/img/pexels-todd-trapani-488382-1420440.jpg" alt="Imagen naturaleza"
+                class="object-cover group-hover/figure:translate-y-full  transition duration-300">
+        </figure>
+    </section>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian&display=swap" rel="stylesheet">
+    <!-- ruta del css resultante -->
+    <link rel="stylesheet" href="dist/css/styles2.css">
+    <title>Ejemplo Transiciones 2 con Tailwind</title>
+</head>
+
+<body class="bg-fuchsia-100 h-screen flex justify-center items-center">
+
+    <section class=" mt-10 mx-auto w-max space-y-8">
+        <!-- Para actuar sibre hermasno usamos -> peer -->
+        <button class="bg-fuchsia-300 text-white p-4 max-content peer/abajo">Abajo</button>
+        <button class="bg-fuchsia-300 text-white p-4 max-content peer/derecha">Derecha</button>
+
+        <img src="dist/assets/img/pexels-todd-trapani-488382-1420440.jpg" alt="Imagen naturaleza"
+            class="w-50 peer-active/abajo:translate-y-full peer-active/derecha:translate-x-full transition-transform">
+    </section>
+
+
+</body>
+
+</html>

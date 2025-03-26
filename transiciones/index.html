@@ -12,10 +12,15 @@
 
 <body class="bg-amber-100 h-screen flex justify-center items-center">
 
-    <figure class="w-64 relative group  overflow-hidden rounded shadow">
+    <!-- ** figure:hover >img  -> se hace aquí con group -->
+    <!-- **  el padre lleva -> group -->
+    <figure class="w-64 relative group overflow-hidden rounded shadow">
         <!-- top-0 left-0 w-full h-full = top-0 left-0 right-0 left-0 = inset-0 -->
-        <p class="bg-zinc-800/40 text-white text-bold text-6xl absolute inset-0 flex items-center justify-center z-1">Nature</p>
-        <img src="dist/assets/img/pexels-todd-trapani-488382-1420440.jpg" alt="Imagen naturaleza" class="object-cover group-hover:translate-y-full transition duration-300">
+        <p class="bg-zinc-800/40 text-white text-bold text-6xl absolute inset-0 flex items-center justify-center z-1">
+            Nature</p>
+        <!-- ** Al hijo que queremos hacer algo -> group-hover:loQueQueremosHacer -->
+        <img src="dist/assets/img/pexels-todd-trapani-488382-1420440.jpg" alt="Imagen naturaleza"
+            class="object-cover group-hover:translate-y-full transition duration-300">
     </figure>
 
 
